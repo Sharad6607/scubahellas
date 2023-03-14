@@ -75,7 +75,7 @@ class Vendors extends Core_Admin_Controller {
                         ];
                         
                         $this->PermissionModel->insert('tbl_vendors',$data);
-                        $this->session->set_flashdata('success', "Vendors details updated successfully.");
+                        $this->session->set_flashdata('success', "Vendors detail updated successfully.");
                         redirect('admin/vendors'); 
                     }
                 }
