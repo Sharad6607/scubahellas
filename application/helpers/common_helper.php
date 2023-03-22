@@ -128,6 +128,18 @@ function slugify($text){
 
 }
 
+function get_table_value($table,$condition=array()){
+
+	$CI =& get_instance();
+
+	$CI->db->select()->from($table);
+
+	$CI->db->where($condition);
+
+	return $CI->db->get()->row_array();
+
+}
+
 
 
 ?>
